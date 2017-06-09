@@ -4,14 +4,17 @@
         <title>Disappearing Ninjas</title>
         <meta charset='utf-8' />
         <link rel='stylesheet' href="{{url_for('static',filename='style.css')}}">
-        <meta description="Disappearing Ninjas for Coding Dojo Flask fundamentals">
+        <meta description="Disappearing Ninjas Error page for Coding Dojo Flask fundamentals">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     </head>
     <body>
         <div id=wrapper>
-            <h1>There are no ninjas here... </h1>
+            <h1>Oh snap! There are no ninjas here... </h1>
+            <p>This is not a valid page URL anyway... </p>
+            <input id="allbutton" onclick="window.location='/ninja';" class="linkbutton" type="button" value="View Ninjas">
         </div>
         <footer>
-            <p>by Troy Center June 2017, Coding Dojo, Flask fundamentals.</p>
+            <p><img src="{{ url_for('static', filename='favicon.ico')}}">by Troy Center June 2017, Coding Dojo, Flask fundamentals.</p>
         </footer>
     </body>
 </html>

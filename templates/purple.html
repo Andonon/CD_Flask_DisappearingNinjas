@@ -5,15 +5,16 @@
         <meta charset='utf-8' />
         <link rel='stylesheet' href="{{url_for('static',filename='style.css')}}">
         <meta description="Disappearing Ninjas for Coding Dojo Flask fundamentals">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     </head>
     <body>
         <div id=wrapper>
             <h1>Donatello</h1>
             <div id="ninjabuttons">
-                <input id="bluebutton" onclick="window.location='/blue';" class="linkbutton" type="button" value="Blue Ninja">
-                <input id="redbutton" onclick="window.location='/red';" class="linkbutton" type="button" value="Red Ninja">
-                <input id="orangebutton" onclick="window.location='/orange';" class="linkbutton" type="button" value="Orange Ninja">
-                <input id="purplebutton" onclick="window.location='/purple';" class="linkbutton" type="button" value="Purple Ninja">
+                <input id="bluebutton" onclick="window.location='/ninja/blue';" class="linkbutton" type="button" value="Blue Ninja">
+                <input id="redbutton" onclick="window.location='/ninja/red';" class="linkbutton" type="button" value="Red Ninja">
+                <input id="orangebutton" onclick="window.location='/ninja/orange';" class="linkbutton" type="button" value="Orange Ninja">
+                <input id="purplebutton" onclick="window.location='/ninja/purple';" class="linkbutton" type="button" value="Purple Ninja">
                 <input id="allbutton" onclick="window.location='/ninja';" class="linkbutton" type="button" value="View All Ninjas">
             </div>
             <div id="ninjaimages">
@@ -21,7 +22,7 @@
             </div>
         </div>
         <footer>
-            <p>by Troy Center June 2017, Coding Dojo, Flask fundamentals.</p>
+            <p><img src="{{ url_for('static', filename='favicon.ico')}}">by Troy Center June 2017, Coding Dojo, Flask fundamentals.</p>
         </footer>
     </body>
 </html>
