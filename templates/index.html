@@ -3,15 +3,21 @@
     <head>
         <title>Disappearing Ninjas</title>
         <meta charset='utf-8' />
-        <link rel='stylesheet' href="{{url_for('static',filename='style.css')}}">
+        <link rel='stylesheet' href='{{url_for("static",filename="style.css")}}'>
         <meta description="Disappearing Ninjas for Coding Dojo Flask fundamentals">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     </head>
     <body>
         <div id=wrapper>
             <h1>There are no ninjas here... </h1>
+            <!--<input id="bluebutton" class="linkbutton" type="button" value="Blue Ninja">
+            <input id="redbutton" class="linkbutton" type="button" value="Red Ninja">
+            <input id="orangebutton" class="linkbutton" type="button" value="Orange Ninja">
+            <input id="purplebutton" class="linkbutton" type="button" value="Purple Ninja">-->
+            <input id="allbutton" onclick="window.location='/ninja';" class="linkbutton" type="button" value="View Ninjas">
         </div>
         <footer>
-            <p>by Troy Center June 2017, Coding Dojo, Flask fundamentals.</p>
+            <p><img src="{{ url_for('static', filename='favicon.ico')}}">by Troy Center June 2017, Coding Dojo, Flask fundamentals.</p>
         </footer>
     </body>
 </html>
