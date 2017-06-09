@@ -8,10 +8,7 @@
     </head>
     <body>
         <div id=wrapper>
-            <h1>There are no ninjas here... </h1>
-            <div id="ninjaimages">
-                <img>
-            </div>
+            <h1>Raphael</h1>
             <div id="ninjabuttons">
                 <input id="bluebutton" onclick="window.location='/blue';" class="linkbutton" type="button" value="Blue Ninja">
                 <input id="redbutton" onclick="window.location='/red';" class="linkbutton" type="button" value="Red Ninja">
@@ -19,7 +16,9 @@
                 <input id="purplebutton" onclick="window.location='/purple';" class="linkbutton" type="button" value="Purple Ninja">
                 <input id="allbutton" onclick="window.location='/ninja';" class="linkbutton" type="button" value="View All Ninjas">
             </div>
-            
+            <div id="ninjaimages">
+                <img src="{{url_for('static',filename='raphael.jpg')}}"></img>
+            </div>            
         </div>
         <footer>
             <p>by Troy Center June 2017, Coding Dojo, Flask fundamentals.</p>

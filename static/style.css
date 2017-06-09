@@ -28,7 +28,7 @@
     height: 40px; 
     width: 100px;
     border-radius: 8px;
-    box-shadow: 3px 3px 3px lightgoldenrodyellow;
+    box-shadow: 3px 3px 3px grey;
 }
 #bluebutton {
     background-color: blue;
