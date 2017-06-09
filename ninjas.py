@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/')
 def homepage():
     '''Home page'''
-    pass
+    return render_template("index.html")
 
 @app.route('/ninja')
 def ninjapage():
@@ -17,12 +17,12 @@ def ninjapage():
     pass
 
 @app.route('/blue')
-def bluepage(): 
+def bluepage():
     '''Blue ninja page'''
     pass
 
 @app.route('/orange')
-def orangepage(): 
+def orangepage():
     '''Orange ninja page'''
     pass
 
@@ -36,6 +36,6 @@ def purplepage():
     '''Purple ninja page'''
 
 @app.route('/<invalidcolor>')
-def invalidcolorpage(): 
-    '''Invalid Color Selection page''' 
+def invalidcolorpage():
+    '''Invalid Color Selection page'''
     pass
