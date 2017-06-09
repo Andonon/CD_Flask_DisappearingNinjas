@@ -14,30 +14,31 @@ def homepage():
 @app.route('/ninja')
 def ninjapage():
     '''Ninja page'''
-    pass
+    return render_template("ninja.html")
 
 @app.route('/blue')
 def bluepage():
     '''Blue ninja page'''
-    pass
+    return render_template("blue.html")
 
 @app.route('/orange')
 def orangepage():
     '''Orange ninja page'''
-    pass
+    return render_template("orange.html")
 
 @app.route('/red')
 def redpage():
     '''Red ninja page'''
-    pass
+    return render_template("red.html")
 
 @app.route('/purple')
 def purplepage():
     '''Purple ninja page'''
+    return render_template("purple.html")
 
 @app.route('/<invalidcolor>')
 def invalidcolorpage():
     '''Invalid Color Selection page'''
-    pass
+    return render_template("invalid.html")
 
 app.run(debug=True)
