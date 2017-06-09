@@ -1,0 +1,97 @@
+/*******************************************************************/
+/* Created: June 8 2017 by Troy Center, troycenter1@gmail.com.     */
+/* CSS for the Flask fundamentals assignment "Dojo Survey"      */
+/*******************************************************************/
+
+/***************************************************/
+/*               CSS reset settings                */
+/***************************************************/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/***************************************************/
+/*              Wrapper                            */
+/***************************************************/
+
+#wrapper {
+        background-image: linear-gradient(300deg, orange, white);
+        height: 1800px;
+        width: 1200px;
+        padding: 100px;
+}
+
+/***************************************************/
+/*     These are the questions, in their own div   */
+/***************************************************/
+#normalinputs {
+    margin: 50px;
+    background-color: red;
+}
+
+/***************************************************/
+/*   These are the input boxes left and right side */
+/***************************************************/
+
+
+#inputleft {
+    display: inline-block;
+    background-color: pink;
+}
+#inputright {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 20px;
+    background-color: yellow;
+}
+#dojopicklist {
+    display: block;
+}
+languagepicklist{
+    display: block;
+}
+
+/***************************************************/
+/*           This is the large comment box         */
+/***************************************************/
+
+#largeinputs {
+    height: 200px;
+    width: 350px;
+    position: relative;
+    left: 50px;
+    background-color: green;
+}
+#largecomment {
+    height: 150px;
+    width: 400px;
+}
+
+/***************************************************/
+/*  Submit button                                  */
+/***************************************************/
+
+#submitbutton, #gobackbutton {
+    height: 40px;
+    width: 100px;
+    border-radius: 9px;
+    box-shadow: 3px 3px 3px orange;
+    background-color: yellowgreen;
+    margin-top: 20px;
+    margin-left: 300px;
+}
+
+/***************************************************/
+/*       Footer, fine print, my signature          */
+/***************************************************/
+
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
