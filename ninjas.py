@@ -39,3 +39,5 @@ def purplepage():
 def invalidcolorpage():
     '''Invalid Color Selection page'''
     pass
+
+app.run(debug=True)
